@@ -20,7 +20,7 @@ $(function(){
 
     // 모든 슬라이드를 표시하는 함수 (슬라이드 이동함수)
     function goToSlide(index) {
-        $slideGroup.animate({left:-50 * index + '%'}, 500);
+        $slideGroup.animate({left:-100 * index + '%'}, 500);
         curIndex = index;
 
         updateNav();
