@@ -29,12 +29,13 @@ a {
 
 /* 사이드 메뉴 */
 #sideMenu {
+    position: fixed;
     width: 20%;
     min-width: 180px;
-    background: rgba(257,257,257, 0.07);
+    background: #111;
     /* background: #fff; */
     height: 100%;
-    color: #fff;
+    color: #ccc;
     overflow: auto;
     float: left;
     z-index: 20;
@@ -54,16 +55,20 @@ a {
 #sideMenu #gnb {
     width: 100%;
     padding: 10px 40px 0 10px;
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: right;
 }
 #sideMenu #gnb li {
     padding: 7px 0;
-    font-size: .9em;
+    font-size: 1em;
     font-weight: bold;
-    text-transform:capitalize
+    text-transform:capitalize;
+    line-height: 2;
+    letter-spacing: -0.05em;
 }
-
+#sideMenu #gnb li a:hover {
+    color: #fff;
+}
 /* 메인 content */
 #container {
     float: right;
@@ -83,23 +88,9 @@ a {
     justify-content: center;
     background: url('../img/blackhouse.png') center no-repeat;
 }
-.mainVisual p:nth-child(1) a {
-    display: inline-block;
-    border: 3px solid #fff;
-    padding: 5px 5px 5px 11.4px;
-    font-size: 2em;
-    text-transform: uppercase;
-    line-height: 1.2em;
-    letter-spacing: 0.2em;
-    font-weight: 900;
-}
-.mainVisual p:nth-child(1) a:hover {
-    color: #eee;
-    border: 3px solid #eee;
-}
-.mainVisual p:nth-child(2) {
+.mainVisual > p {
     font-size: .8em;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 /* 섹션 */
@@ -107,7 +98,7 @@ a {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    border-top: 1px solid #ddd;
+    /* border-top: 1px solid #ddd; */
 }
 
 /* 섹션1 story */
@@ -115,26 +106,45 @@ section#story {
     height: auto;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    position: relative;
     border: none;
     color: #fff;
+    background: linear-gradient(black 0%, white 100%) no-repeat;
+
 }
-section#story h2 {
-    text-align: center;
+section#story .sectionTitle {
+    position: absolute;
+    left: 10%;
+    top: 300px;
+    z-index: 1;
+    white-space: nowrap;
     margin: 50px 0 10px;
-    font-size: 3em;
+    font-size: 64px;
     text-transform: uppercase;
 }
-
-#story .content > div:first-child {
-    text-align: center;
-    font-size: 2em;
-}
-#story .content > div:first-child b {
+#story > b {
+    position: absolute;
+    left: 10%;
+    top: 375px;
     display: block;
     padding: 50px 0;
+    z-index: 1;
+    white-space: nowrap;
+    font-weight: lighter;
+    font-size: 0.95em;
 }
-#story .content > div:last-child {
+#story .content > .flow1 {
+    text-align: center;
+    font-size: 2em;
+    color: #eee;
+}
+.flow1 b {
+    display: block;
+    padding: 100px 0;
+    font-size: 16px;
+}
+#story .content > .flow2,
+#story .content > .flow3 {
     display: flex;
     justify-content: space-around;
     font-size: 1.2em;
@@ -143,22 +153,81 @@ section#story h2 {
     line-height: 2;
     font-weight: 900;
     letter-spacing: -0.1em;
-
 }
-#story .content > div:last-child img {
+.flow2 img, .flow3 img {
     width: 500px;
     height: 500px;
-    
-    /* color: #fff; */
 }
-#story .content .definition {
+.flow2 .definition {
     text-align: right;
-    margin-right: 50px;
+    margin-right: 40px;
+    padding-right: 20px;
+    margin-top: 50px;
     font-weight: normal;
-    font-size: 0.9em;
+    font-size: 16px;
+    border-right: 3px solid #666;
+    color: #999;
+}
+.flow2 .definition li,
+.flow3 .laws li {
+    font-size: 13.8px;
+}
+.flow2 .definition span {
+    display: inline-block;
+    font-size: 13.8px;
+    margin-top: 10px;
+}
+.flow3 .laws {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 50px;
+    font-weight: normal;
+    font-size: 16px;
+    border-left: 3px solid #555;
+    color: #454545;
+}
+#story .content > .flow4 {
+    margin: 200px 0 360px;
+    text-align: center;
+    font-size: 1.8em;
+    letter-spacing: -0.05em;
+    color: #444;
 }
 
-
+#story .content > .flow5 {
+    width: 100%;
+    height: 450px;
+    background: url('../img/daegu-g4908f7aca_1920.jpg') center no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    text-align: center;
+}
+.flow5 b {
+    margin: 40px 40px;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+.flow5 p {
+    /* margin: 0 40px; */
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+#story .content > .flow6 {
+    text-align: center;
+    color: #000;
+    font-weight: 900;
+    margin: 350px 0;
+}
+.flow6 span {
+    font-size: 16px;
+    margin: 0 10px;
+}
+.flow6 p {
+    font-size: 2em;
+    line-height: 2;
+    letter-spacing: -0.1em;
+}
 
 
 /* 섹션2 현황 */
@@ -169,6 +238,7 @@ section#story h2 {
     justify-content: center;
     align-items: center;
     flex-shrink: initial;
+
 }
 #present .statistics {
     width: 400px;
@@ -211,6 +281,8 @@ section#story h2 {
     font-size: 1.3em;
     font-weight: 400;
 }
+
+
 /* 섹션3 활용 */
 #application {
     display: flex;

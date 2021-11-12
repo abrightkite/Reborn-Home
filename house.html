@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/slide-style.css">
     <link rel="stylesheet" href="style/mapstyle.css">
+    <link rel="stylesheet" href="style/btnEvent-style.css">
     <script src="script/jquery-1.11.3.min.js"></script>
     <script src="script/slide.js"></script>
+    
 </head>
-<body style="background-color: #000;">
-    <div id="Wrap">
+<body>
+    <div id="Wrap" style="background-color: #000;">
         <!-- 네비게이션 -->
         <nav id="sideMenu">
             <h1>
@@ -34,18 +36,24 @@
                 <li>notion</li>
             </ul> -->
         </nav>
-
         <!-- 메인컨텐츠 -->
         <div id="container">
             <!-- 메인비주얼 -->
             <div class="mainVisualWrap">
                 <div class="mainVisual">
-                    <p><a href="">Go to Re:born Home</a></p>
+                    <a class="eventBtn" href="">
+                        <span class="text">Go to Re:born Home</span>
+                        <span class="line -right"></span>
+                        <span class="line -top"></span>
+                        <span class="line -left"></span>
+                        <span class="line -bottom"></span>
+                    </a>
                     <p>빈집을 긍정적으로 인식할 수 있는 문구를 적으면 좋을 것 같습니다.</p>
                 </div>
             </div>
             <section id="story">
                 <h2 class="sectionTitle">re:born home story</h2>
+                <b>활기찬 도시에서 "빈집"은 고요하게 자리를 지키고 있다.</b>
                 <div class="slideShow">
                     <div class="slideArea">
                         <div class="slide"><img src="img/slide01.jpg" alt=""></div>
@@ -58,29 +66,49 @@
                         <div class="slide"><img src="img/slide08.jpg" alt=""></div>
                         <div class="slide"><img src="img/slide09.jpg" alt=""></div>
                     </div>
-                    <div class="slideNav">
-                        <a href="#" class="prev">prev</a>
-                        <a href="#" class="next">next</a>
-                    </div>
                     <div class="slideIndicator"></div>
                 </div>
-                
                 <div class="content">
-                    <div>
-                        <b>활기찬 도시에서 "빈집"은 고요하게 자리를 지키고 있다.</b>
-                        <b>온기조차 사라진 채 외면을 받고 있다. </b>
+                    <div class="flow1">
+                        <b></b>
+                        <!-- <img src="img/banner.png" alt=""> -->
+                        <!-- <b>온기조차 사라진 채 외면을 받고 있다. </b> -->
                     </div>
-                    <div>
+                    <div class="flow2">
                         <img src="img/banner.png" alt="">
                         <div>
                             <p>현재 국내에서 공식적으로 빈집의 통계를 알수 있는 곳은 통계청이 유일하다.<br>각 지자체 및 기관에서도 빈집조사를 통해 통계를 내고 있지만,<br>그 기준이 모두 다르다.</p>
-                            <ul class="definition">서로 다른 빈집 정의
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul class="definition">※ 서로 다른 빈집 정의
+                                <li>빈집특례법 - 1년 이상 거주, 사용하지 않은 주택 (미분양 주택 등 제외)</li>
+                                <li>건축법/농어촌정비법 - 1년 이상 거주, 사용하지 않은 주택 및 건축물</li>
+                                <li>인구주택총조사(통계청) - 조사기간 내 매매, 임대, 분양, 이사 등의 사유로 사람이 살지 않는 주택</li>
+                                <li>서울특별시 조례 - 1년 이상 거주, 사용하지 않은 주택 및 건축물</li>
+                                <span>* 이러한 다른 기준 때문에 각 기관에서 발표하는 빈집의 수는 다르다</span>
                             </ul>
                         </div>
+                    </div>
+                    <div class="flow3">
+                        <div>
+                            <p>시민들이 빈집에 대해 알려도 해도 <br>법령상 빈집에 대한 자료공개는 소유주의 허락이 있어야 하기에 <br>지자체에서는 곤란할 수밖에 없다.</p>
+                            <ul class="laws">※ 빈집 법령
+                                <li>제8조(빈집등에 관한 자료 또는 정보의 이용 및 요청)</li>
+                                <li>③ 제1항 및 제2항에 따른 자료 또는 정보의 수집ㆍ이용 및 요청ㆍ제공은 「개인정보 보호법」에 따른다.</li>
+                                <li>제15조(빈집정보시스템의 구축)</li>
+                                <li>⑥ 시ㆍ도지사는 빈집을 활용하기 위한 목적의 범위에서 빈집의 소유자가 동의한 경우에 한정하여<br> 빈집정보시스템으로 처리한 빈집정보를 인터넷과 그 밖의 방법을 병행하여 공개할 수 있다.</li>
+                            </ul>
+                        </div>
+                        <img src="img/banner.png" alt="">
+                    </div>
+                    <div class="flow4">
+                        <b>빈집이라는 개념 자체가 귀신의 집과 같은 공포의 존재로 생각되기 때문이다.</b>
+                    </div>
+                    <div class="flow5">
+                        <b>사람들이 모여드는 거대한 들판</b>
+                        <p>거대한 들판에 사람들은 모여 들었다.<br><br>작은 판자집은 높은 빌딩이 되었고<br>230만이 넘는 사람들이 모여 살고 있다. </p>
+                    </div>
+                    <div class="flow6">
+                        <!-- 이미지 넣어야 할 듯! -->
+                        <p><span>그 가운데</span>빈집은 우두커니 존재한다</p>
                     </div>
                 </div>
             </section>
@@ -277,6 +305,7 @@
                     <h2 class="sectionTitle">re:born home 알리기</h2>
                 </div>
             </section>
+            
         </div>
     </div>
 </body>
