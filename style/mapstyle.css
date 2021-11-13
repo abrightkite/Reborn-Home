@@ -2,6 +2,12 @@ path {
     fill: #999;
 }
 path:hover {
-    fill: #eee;
+    fill: #777;
     cursor: pointer
+}
+/* .area {fill: aqua;} */
+.area.active {
+    fill: #666;
+    stroke: #666;
+    stroke-width: 6px;
 }

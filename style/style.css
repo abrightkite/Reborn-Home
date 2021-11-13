@@ -238,7 +238,6 @@ section#story .sectionTitle {
     justify-content: center;
     align-items: center;
     flex-shrink: initial;
-
 }
 #present .statistics {
     width: 400px;
@@ -281,7 +280,6 @@ section#story .sectionTitle {
     font-size: 1.3em;
     font-weight: 400;
 }
-
 
 /* 섹션3 활용 */
 #application {
