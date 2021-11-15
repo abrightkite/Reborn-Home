@@ -1,0 +1,89 @@
+#story {
+    display: flex;
+    align-items: top;
+    position: relative;
+    color: #fff;
+    background: linear-gradient(black 0%, #333 100%) no-repeat;
+}
+#story .sectionTitle {
+    position: absolute;
+    left: 50px;
+    top: 350px;
+    z-index: 1;
+    white-space: nowrap;
+    margin: 50px 0 10px;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+#story > b {
+    position: absolute;
+    left: 50px;
+    top: 425px;
+    display: block;
+    padding: 50px 0;
+    z-index: 1;
+    white-space: nowrap;
+    font-weight: lighter;
+    font-size: 0.95em;
+}
+
+/* 스토리2 */
+#story2 {
+    position: relative;
+    background: linear-gradient(#333 0%, #666 100%) no-repeat;
+    color: #fff;
+    padding: 50px 80px;
+}
+#story2::before {
+    width: 540px;
+    height: 540px;
+    content: "";
+    opacity: 1;
+    position: absolute;
+    right: 50px;
+    bottom: 80px;
+    background-image: url(../img/graph.png);
+    background-position: right;
+    background-size: 540px;
+}
+
+#story2 h3 {
+    font-weight: lighter;
+    letter-spacing: -0.05em;
+}
+#story2 > div:first-of-type {
+    line-height: 2;
+    font-size: 14px;
+}
+#story2 > div:first-of-type p:first-of-type {
+    font-size: 32px;
+    letter-spacing: -0.1em;
+    margin-bottom: 20px;
+}
+#story2 > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    color: #ddd;
+    line-height: 2;
+    font-weight: 900;
+    letter-spacing: -0.1em;
+    margin-top: 70px;
+}
+#story2 .definition {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 30px;
+    font-weight: normal;
+    font-size: 16px;
+    border-left: 3px solid #666;
+    color: #aaa;
+}
+.definition li {
+    font-size: 14px;
+}
+.definition span {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+}
