@@ -34,24 +34,12 @@
     color: #fff;
     padding: 50px 80px;
 }
-#story2::before {
-    width: 540px;
-    height: 540px;
-    content: "";
-    opacity: 1;
-    position: absolute;
-    right: 50px;
-    bottom: 80px;
-    background-image: url(../img/graph.png);
-    background-position: right;
-    background-size: 540px;
-}
-
 #story2 h3 {
     font-weight: lighter;
     letter-spacing: -0.05em;
 }
 #story2 > div:first-of-type {
+    color: #ddd;
     line-height: 2;
     font-size: 14px;
 }
@@ -69,6 +57,7 @@
     font-weight: 900;
     letter-spacing: -0.1em;
     margin-top: 70px;
+    position: relative;
 }
 #story2 .definition {
     text-align: left;
@@ -86,4 +75,10 @@
     display: inline-block;
     font-size: 14px;
     margin-top: 10px;
+}
+#story2 > div:last-of-type img {
+    width: 540px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }

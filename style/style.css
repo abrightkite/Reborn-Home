@@ -63,7 +63,7 @@ a {
     font-size: 1em;
     font-weight: bold;
     text-transform:capitalize;
-    line-height: 2;
+    line-height: 3;
     letter-spacing: -0.05em;
 }
 #sideMenu #gnb li a:hover {
@@ -158,12 +158,10 @@ a {
 
 /* 섹션2 현황 */
 #present {
-    height: 100%;
+    background: linear-gradient(#666 0%, #999 100%) no-repeat;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-shrink: initial;
 }
 #present .statistics {
     width: 400px;
