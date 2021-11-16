@@ -23,6 +23,7 @@
     margin-top: 180px;
     font-size: 72px;
     position: relative;
+    text-transform: capitalize;
 }
 #intro b {
     font-size: 14px;

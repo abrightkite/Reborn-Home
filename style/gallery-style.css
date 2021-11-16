@@ -1,0 +1,56 @@
+
+/* 갤러리 */
+#container section.gallery {
+    height: unset;
+    /* background: linear-gradient(#666 0%, #000 10%) no-repeat; */
+    padding-top: 30px;
+    overflow: hidden;
+}
+.gallery {
+    text-align: center;
+    padding-bottom: 80px;
+    /* color: #fff; */
+}
+.gallery > p {
+    font-weight: 700;
+}
+.gallery h2 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    padding-right: 50px;
+    text-transform: capitalize;
+    text-align: right;
+}
+/* 72참고 */
+.grid {
+    width: 100%;
+}
+.grid-item, .grid-sizer {
+    box-sizing: border-box;
+    /* max-width: 440px; */
+    width:32%;
+    /* float: left; */
+    margin: 0.66666%;
+    overflow: hidden;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+}
+.grid-item > div:nth-child(1) img {
+    vertical-align: top;
+    width: 100%;
+}
+.grid-item .details {
+    text-align: left;
+    padding: 20px;
+}
+.details .contentType {
+    font-size: 1em;
+}
+.details h3 {
+    font-size: 1.3em;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+
+
+
