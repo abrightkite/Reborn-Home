@@ -4,24 +4,41 @@
     height: unset;
     /* background: linear-gradient(#666 0%, #000 10%) no-repeat; */
     background-color: #000;
-    padding: 30px 50px 0;
+    padding: 30px 50px;
     overflow: hidden;
-    color: #fff;
+    /* color: #fff; */
 }
 .gallery {
     text-align: center;
     padding-bottom: 80px;
-    /* color: #fff; */
+    color: #fff;
 }
 .gallery > p {
     font-weight: 700;
 }
 .gallery h2 {
-    font-size: 64px;
+    width: fit-content;
+    font-size: 45px;
     margin-bottom: 20px;
-    padding-right: 10px;
+    padding-bottom: 10px;
     text-transform: capitalize;
-    text-align: right;
+    text-align: left;
+    position: relative;
+    color: #fff;
+    font-weight: 400;
+}
+
+.gallery h3 {
+    width: fit-content;
+    padding: 0 15px;
+    margin: 10px 0 5px;
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: capitalize;
+    border-left: 3px solid #ccc;
+
 }
 /* 72참고 */
 .grid {
@@ -33,9 +50,9 @@
     width:32%;
     /* float: left; */
     margin: 0.66666%;
-    overflow: hidden;
-    box-shadow: 10px 5px 5px rgba(255, 255, 255, .15);
-    border: 1px solid #333;
+    /* overflow: hidden; */
+    box-shadow: 6px 5px 5px rgba(255, 255, 255, .15);
+    border: 1px solid #111;
 }
 .grid-item > div:nth-child(1) img {
     vertical-align: top;
@@ -46,14 +63,54 @@
     padding: 20px;
 }
 .details .contentType {
-    font-size: 1em;
+    font-size: 14px;
 }
-.details h3 {
-    font-size: 1.3em;
+.details h4 {
+    font-size: 1.2em;
     padding-top: 5px;
     padding-bottom: 10px;
 }
-
+.details p {
+    color: #ddd;
+    font-size: 14px;
+    letter-spacing: -.05em;
+    line-height: 1.5;
+}
+.gallery .moreBtn {
+    position: relative;
+    padding: 1em 1.5em;
+    background-color: transparent;
+    font-size: 18px;
+    margin: 30px 0 50px;
+}
+.gallery .moreBtn:after,
+.gallery .moreBtn::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    border: 2px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
+}
+.gallery .moreBtn:after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+.gallery .moreBtn::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+.gallery .moreBtn:hover:after,
+.gallery .moreBtn:hover:before {
+    width: 100%;
+    height: 100%;
+}
 
 
 

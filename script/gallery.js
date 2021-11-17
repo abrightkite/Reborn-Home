@@ -13,7 +13,6 @@ $(function(){
 
     $info2 = $('.info2');
     $scrollBox = $('.scrollBox');
-    $scrollArrow
 {/* <i class="fas fa-angle-down"></i> */}
 
 

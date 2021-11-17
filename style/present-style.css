@@ -1,0 +1,100 @@
+section#contact_form {
+    background-color: #000;
+    color: #ddd;
+    border-top: 1px solid rgba(221,221,221, 0.2);
+}
+#contact_form > div {
+    margin: 150px auto 0;
+    padding: 50px;
+    width: 80%;
+    border: 1px solid #ddd;
+}
+#contact_form .sectionTitle {
+    font-size: 32px;
+    text-transform: capitalize;
+    color: #fff;
+}
+#contact_form p {
+    font-size: 12px;
+}
+#contact_form > div > div {
+    display: flex;
+    padding-top: 30px;
+}
+.formArea {
+    width: 60%;
+    border-right: 1px solid rgba(255,255,255, 0.2);
+    padding-right: 40px;
+}
+.foot {
+    width: 40%;
+    padding-left: 40px;
+}
+/* 폼 */
+.formArea .row {
+    display: flex;
+    justify-content: space-between;
+}
+.formArea .row > div {
+    width: 45%;
+}
+.formArea input[type=text],
+.formArea select,
+.formArea textarea,
+.formArea input[type=email],
+.formArea input[type=tel] {
+width: 100%;
+padding: 14px 12px;
+border: 1.5px solid #666;
+margin-top: 15px;
+margin-bottom: 16px;
+resize: none;
+background-color: rgba(255,255,255, 0.1);
+color: #fff;
+}
+label {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+::placeholder {
+    font-size: 14px;
+    color: #ddd;
+    opacity: .5; 
+}
+.formArea textarea {
+    height: 200px;
+}
+
+.formArea input[type=submit] {
+    padding: 12px 30px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255,255,255, 0.3);
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.formArea input[type=submit]:hover {
+    background-color: #fff;
+    color: #000;
+}
+/* 푸터 */
+.foot > div {
+    margin-bottom: 60px;
+}
+.foot b {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.foot b + div {
+    margin: 10px 0;
+}
+.foot a img {
+    width: 24px;
+    height: 24px;
+}
