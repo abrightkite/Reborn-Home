@@ -3,8 +3,10 @@
 #container section.gallery {
     height: unset;
     /* background: linear-gradient(#666 0%, #000 10%) no-repeat; */
-    padding-top: 30px;
+    background-color: #000;
+    padding: 30px 50px 0;
     overflow: hidden;
+    color: #fff;
 }
 .gallery {
     text-align: center;
@@ -17,7 +19,7 @@
 .gallery h2 {
     font-size: 64px;
     margin-bottom: 20px;
-    padding-right: 50px;
+    padding-right: 10px;
     text-transform: capitalize;
     text-align: right;
 }
@@ -32,7 +34,8 @@
     /* float: left; */
     margin: 0.66666%;
     overflow: hidden;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);
+    box-shadow: 10px 5px 5px rgba(255, 255, 255, .15);
+    border: 1px solid #333;
 }
 .grid-item > div:nth-child(1) img {
     vertical-align: top;

@@ -974,7 +974,7 @@ window.onload = function() {
           "3,4등급 대비 12등급 비율": "1.266666667",
           "가구 수": 5019
         }
-    ]
+    ];
 
     var area = document.querySelectorAll('#daegu .area');
     // const row = document.querySelectorAll('.row');
