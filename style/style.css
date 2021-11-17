@@ -53,14 +53,26 @@ body {
 }
 #sideMenu #gnb li {
     padding: 7px 0;
-    font-size: 1em;
+    font-size: 16px;
     font-weight: bold;
     text-transform:capitalize;
-    line-height: 3;
+    line-height: 2;
     letter-spacing: -0.05em;
 }
 #sideMenu #gnb li a:hover {
     color: #fff;
+}
+#sideMenu #gnb .depth {
+    text-align: left;
+    padding-left: 60px;
+}
+#sideMenu #gnb .depth li {
+    padding: 8px 0;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform:capitalize;
+    line-height: 1.5;
+    letter-spacing: -0.05em;
 }
 /* 메인 content */
 #container {
@@ -91,12 +103,11 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    /* border-top: 1px solid #ddd; */
+    transition: 2s;
 }
 
 
 /* story */
-
 /*
 #story .content > .flow3 {
     display: flex;
@@ -127,14 +138,14 @@ body {
  */
 
 /* 섹션2 현황 */
-#present {
+#current {
     /* background: linear-gradient(#666 0%, #aaa 100%) no-repeat; */
     background-color: #efefef;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-#present .statistics {
+#current .statistics {
     width: 400px;
     height: 600px;
     margin-right: 70px;
