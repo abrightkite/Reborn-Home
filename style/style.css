@@ -48,15 +48,15 @@ body {
 #sideMenu #gnb {
     width: 100%;
     padding: 10px 40px 0 10px;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: right;
 }
 #sideMenu #gnb li {
     padding: 7px 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     text-transform:capitalize;
-    line-height: 2;
+    line-height: 1.5;
     letter-spacing: -0.05em;
 }
 #sideMenu #gnb li a:hover {
@@ -65,13 +65,17 @@ body {
 #sideMenu #gnb .depth {
     text-align: left;
     padding-left: 60px;
+    /* display: none; */
+    height: 0;
+    /* height: auto; */
+    overflow: hidden;
 }
 #sideMenu #gnb .depth li {
     padding: 8px 0;
     font-size: 12px;
     font-weight: bold;
     text-transform:capitalize;
-    line-height: 1.5;
+    line-height: 1.2;
     letter-spacing: -0.05em;
 }
 /* 메인 content */
