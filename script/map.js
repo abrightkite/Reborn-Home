@@ -975,6 +975,7 @@ window.onload = function() {
           "가구 수": 5019
         }
     ];
+    console.log(presentData);
 
     var area = document.querySelectorAll('#daegu .area');
     // const row = document.querySelectorAll('.row');

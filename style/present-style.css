@@ -4,7 +4,7 @@ section#contact_form {
     border-top: 1px solid rgba(221,221,221, 0.2);
 }
 #contact_form > div {
-    margin: 150px auto 0;
+    margin: 50px auto 0;
     padding: 50px;
     width: 80%;
     border: 1px solid #ddd;

@@ -149,43 +149,43 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
-#current .statistics {
+#current .figure {
     width: 400px;
     height: 600px;
     margin-right: 70px;
     color: #000;
 }
-.statistics .sectionTitle {
+.figure .sectionTitle {
     font-size: 1em;
     font-weight: 700;
 }
-.statistics #city {
+.figure #city {
     color: #000;
     font-size: 1.6em;
     line-height: 1.5;
     letter-spacing: -0.1em;
     font-weight: lighter;
 }
-.statistics .statisticsCon {
+.figure .figureCon {
     margin-top: 50px;
     display: flex;
 }
-.statistics .statisticsCon .box:first-child {
+.figure .figureCon .box:first-child {
     margin: 0 120px 0 10px;
 }
-.statistics .row:not(:nth-of-type(1)) {
+.figure .row:not(:nth-of-type(1)) {
     margin: 50px 0 15px 0;
 }
-.statistics .row:nth-of-type(1) {
+.figure .row:nth-of-type(1) {
     margin: 5px 0 0;
 }
-.statistics .statisticsCon .title {
+.figure .figureCon .title {
     color: #111;
     line-height: 2;
     font-weight: 500;
     letter-spacing: -0.1em;
 }
-.statistics .number {
+.figure .number {
     color: #000;
     font-size: 1.3em;
     font-weight: 400;
