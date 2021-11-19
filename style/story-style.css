@@ -85,3 +85,202 @@
     right: 0;
     bottom: 0;
 }
+
+#story3 {
+    background-image: url(../img/vacant.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #eee;
+}
+#story3::before {
+    content: "";
+    opacity: .3;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+}
+#story3 > div:first-child {
+    margin: 80px;
+    position: absolute;
+}
+#story3 b {
+    font-weight: lighter;
+    font-size: 32px;
+    letter-spacing: -0.1em;
+}
+#story3 h3 {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+#story3 > .flow3 {
+    position: absolute;
+    bottom: 80px; right: 80px;
+    text-align: right;
+    font-size: 1.2em;
+    color: #ccc;
+    line-height: 2;
+    font-weight: 900;
+    letter-spacing: -0.1em;
+}
+.flow3 .laws li {
+    font-size: 13.8px;
+}
+.flow3 .laws {
+    padding-right: 20px;
+    margin: 50px 0 20px;
+    font-weight: normal;
+    font-size: 16px;
+    border-right: 3px solid #ccc;
+    color: #ddd;
+}
+
+#story4 {
+    background: #000;
+    color: #eee;
+}
+#story4 > div:first-child {
+    margin: 80px;
+    text-align: right;
+}
+#story4 h3 {
+    line-height: 1.5;
+}
+#story4 b {
+    font-weight: lighter;
+    font-size: 32px;
+    letter-spacing: -0.1em;
+}
+#story4 .complaints > div {
+    max-width: 50%;
+    margin: 30px 0 30px 80px;
+}
+#story4 .complaints > div p {
+    padding: 7px 0;
+}
+#story4 .complaints > div p:first-of-type {
+    color: #aaa;
+}
+#story4 .complaints > div p:last-of-type {
+    color: #ddd;
+}
+#story4 .complaints > div:nth-child(2) {
+    text-align: right;
+}
+section#story5 {
+    height: unset;
+}
+#story5 {
+    text-align: center;
+    padding: 50px 80px;
+    
+}
+#story5 h3 {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: -0.1em;
+}
+#story5 img {
+    max-width: 50%;
+    margin: 20px 0;
+}
+section#story6 {
+    height: unset;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 50px 80px;
+}
+#story6 h2 {
+    font-size: 48px;
+    text-transform: capitalize;
+    padding: 10px 0 20px;
+}
+#story6 b {
+    font-weight: normal;
+    font-size: 24px;
+    font-weight: lighter;
+}
+#story6 p {
+    font-size: 12px;
+    padding: 7px 0;
+}
+#story6 .video {
+    position: relative;
+}
+#story6 .video:first-of-type {
+    margin-top: 10px;
+}
+#story6 .video > div {
+    position: absolute;
+    bottom: 20px; right: 0; left: 0;
+}
+#story6 .video h4 {
+    text-transform: capitalize;
+    font-size: 32px;
+}
+#story6 .video h4 span {
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+/* story 7 */
+section#story7 {
+    height: unset;
+    background-color: #fff;
+    padding: 50px 80px 150px;
+    text-align: center;
+}
+#story7 > div:first-child {
+    text-align: left;
+}
+#story7 h2 {
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+#story7 > div:first-child p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+#story7 > div:first-child b {
+    font-size: 12px;
+    display: block;
+}
+.methodCon {
+    display: flex;
+    margin-top: 50px;
+}
+.methodCon img {
+    max-width: 50%;
+    text-align: center;
+    margin-right: 50px;
+}
+.methods {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.methods > div {
+    text-align: left;
+}
+.methods h3 {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #ddd;
+}
+.methods p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+.methods span {
+    font-size: 12px;
+}

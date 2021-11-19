@@ -31,23 +31,23 @@
                 <a href=""><img src="img/rs-logo.png" style="width: 50px; height: 50px;" alt="logo"></a>
                 <a href="">EMPTY<br/>HOUSE</a>
             </h1>
-            <ul id="gnb">
-                <li><a id="introBtn" href="#">re: born home</a></li>
+            <ul id="gnb" class="mainMenu">
+                <li><a id="introBtn" class="btn" href="#">re: born home</a></li>
                 <li>
-                  <a id="storyBtn" href="#">re: born home 이야기</a>
+                  <a id="storyBtn" class="btn" href="#">re: born home 이야기</a>
                   <ul class="depth">
-                    <li><a id="story2Btn" href="#">re : born Home (빈집)은 무엇인가</a></li>
-                    <li><a id="currentBtn" href="#">re: born home 현황</a></li>
-                    <li><a id="causeBtn" href="#">빈집 요인</a></li>
-                    <li><a id="story3Btn" href="#">빈집은 불가침적 영역이다</a></li>
-                    <li><a id="story4Btn" href="#">빈집은 공포의 대상이며, 혐오의 대상이다</a></li>
-                    <li><a id="story5Btn" href="#">그러나 대부분의 사람들은 빈집문제에<br>관심이 없다</a></li>
+                    <li><a id="story2Btn" class="btn" href="#">re : born Home (빈집)은 무엇인가</a></li>
+                    <li><a id="currentBtn" class="btn" href="#">re: born home 현황</a></li>
+                    <li><a id="causeBtn" class="btn" href="#">빈집 요인</a></li>
+                    <li><a id="story3Btn" class="btn" href="#">빈집은 불가침적 영역이다</a></li>
+                    <li><a id="story4Btn" class="btn" href="#">빈집은 공포의 대상이며, 혐오의 대상이다</a></li>
+                    <li><a id="story5Btn" class="btn" href="#">그러나 대부분의 사람들은 빈집문제에<br>관심이 없다</a></li>
                   </ul>
                 </li>
-                <li><a id="story6Btn" href="#">빈집은 뜯지 않은 선물이다</a></li>
-                <li><a id="story7Btn" href="#">re: born home 종류</a></li>
-                <li><a id="galleryBtn" href="">Re: Born Home 활용 사례</a></li>
-                <li><a id="presentBtn" href="">Re: Born Home 알리기</a></li>
+                <li><a id="story6Btn" class="btn" href="#">새롭게 태어난 re:born home</a></li>
+                <li><a id="story7Btn" class="btn" href="#">re: born home 종류</a></li>
+                <li><a id="galleryBtn" class="btn" href="">Re: Born Home 활용 사례</a></li>
+                <li><a id="presentBtn" class="btn" href="">Re: Born Home 알리기</a></li>
 
 
             </ul>
@@ -57,7 +57,7 @@
             <!-- 메인비주얼 -->
             <div class="mainVisualWrap">
                 <div class="mainVisual">
-                    <a class="eventBtn" href="">
+                    <a class="eventBtn" id="goRbH" href="">
                         <span class="text">Go to Re:born Home</span>
                         <span class="line -right"></span>
                         <span class="line -top"></span>
@@ -126,10 +126,10 @@
                 </div>
             </section>
             <section id="current">
-                <div class="statistics">
+                <div class="figure">
                     <h2 class="sectionTitle">re:born home 현황</h2>
                     <div id="city">지도를 클릭하면 도시 통계가 나옵니다</div>
-                    <div class="statisticsCon">
+                    <div class="figureCon">
                         <div class="box">
                             <div class="row">
                                 <div class="title">구군</div>
@@ -307,12 +307,160 @@
                     </svg>
                 </div>
             </section>
-            <section id="cause"></section>
-            <section id="story3"></section>
-            <section id="story4"></section>
-            <section id="story5"></section>
-            <section id="story6"></section>
-            <section id="story7"></section>
+            <div class="moreCurrent">
+                <h3>대구광역시에는 빈집이 어디에 얼마나 있을까</h3>
+                <div class="currentStat">
+                    <img style="width: 50%;" src="img/ratio.png" alt="">
+                    <div>
+                        <p>21년 1월 기준  중구 184개, 동구 694개, 서구 440개, 남구 384개, 북구 504개, 수성구 554개, 달서구243개, 달성군 534개 등이다. 각 구군별로는 1, 2등급은 동구가 496개로 가장 많고. 3,4등급은 서구가 377개로 가장 많다.</p>
+                        <p>기 비율에 따라 리모델링 및 보수로서 활용해야 할 것과 철거 후 새로운 장소를 만드는 것으로 빈집활용 방식이 달라질 수 있다. </p>
+                        <b>대구광역시의 빈집은 2017년을 기점으로 즐어들고 있다.</b>
+                        <p>하지만, 빈집관리에 대해 소홀해 진다면  현재 전국 6.5%인 빈집 비율이 2050년에는 총 302만개, 총 주택대비 10%를 넘어갈 수 있다고 예측하기도 한다. (한국국토정보공사 , 2017)</p>
+                    </div>
+                </div>
+            </div>
+            <section id="cause">
+                <div>
+                    <h3>빈집 요인</h3>
+                    <b>사람과 이어지는 얽히고 얽힌 존재</b>
+                    <p>우리보다 이에 대해 빠르게 빈집과 공생하고 있는 일본은 빈집이 생기는 요인으로 지역이동(28.6%)와 고령화(20.4%)를 크게 보고 있다.</p>
+                    <span>(국토교통성, 2010 (国土交通省 (mlit.go.jp))</span>
+                    <ul>집이 비게 되는 요인은 그 뿐만이 아니다.
+                        <li>재개발이나 재건축 사업 등 도시정비사업의 정비구역으로 지정되었다가 사업취소 및 지연으로 주거, 산업기능을 상실한 경우</li>
+                        <li>주택 수요보다 공급이 많아지거나 부동산 거래가 감소하여 임대, 매매가 되지 않아 빈집이 생기는 경우</li>
+                        <li>기반시설 및 교육, 문화여건의 저하로 지역 경쟁력이 건물 경쟁력으로 이어지는 경우</li>
+                        <li>과세의 문제로 매매, 상속으로 얻은 집을 지가상승 및 재개발의 기회를 노리며 방치하는 경우</li>
+                    </ul>
+                </div>
+                <div class="factorArea">
+                    <div class="factorEx">
+                        <strong>대구광역시의 빈집은 아파트가 대부분이었다</strong>
+                    </div>
+                    <div class="factorGr">
+                        <img src="img/factor1.png" alt="주택종류별 현황">
+                    </div>
+                </div>
+                <div class="factorArea">
+                    <div class="factorGr">
+                        <img src="img/factor2.png" alt="건축연도별 현황">
+                    </div>
+                    <div class="factorEx">
+                        <strong>대구광역시의 빈집은 오래된 건물이 대부분이었다</strong>
+                        <p>10년이내, 특히 17년도와 20년도의 빈집도 상당 수 존재하는 것을 확인했다.<br>이는 신규 아파트가 많이 비어있다는 것이다.</p>
+                        <p style="margin-top: 15px;">대구광역시의 주택 빈집은<br>주택보급률과 1인가구, 정비구역, 가임기여성인구, 노령인구의 영향으로 생겼다.<br>주택보급률의 영향이 가장 강하고,  그 다음으로 1인가구와 가임기여성의 영향이 컸다. </p>
+                    </div>
+                </div>
+                <div class="factorArea">
+                    <div class="factorEx">
+                        <strong>
+                            사유는 매매, 임대, 이사가 많고 비어있는 기간은 3개월 미만이 많았다.
+                        </strong>
+                        <p>즉, 오래된 주택의 관리도 중요하지만, 새로운 주택의 공급과 수요에 맞는 관리나 정책이 필요하다는 것을 보여준다.</p>
+                    </div>
+                    <div class="factorGr">
+                        <img src="img/factor3.png" alt="사유별 현황">
+                    </div>
+                </div>
+            </section>
+            <section id="story3">
+                <div>
+                    <b>온기조차 사라진 채 외면을 받고 있다</b>
+                    <h3>빈집은 불가침적 영역이다</h3>
+                    <p>마치 조선시대에 도둑이 신당으로 도망가면 못 쫓는 것처럼 빈집은 건드릴 수 없는 존재이다.</p>
+                </div>
+                <div class="flow3">
+                    <div>
+                        <p>시민들이 빈집에 대해 알려도 해도 <br>법령상 빈집에 대한 자료공개는 소유주의 허락이 있어야 한다.</p>
+                        <ul class="laws">※ 빈집 법령
+                            <li>제8조(빈집등에 관한 자료 또는 정보의 이용 및 요청)</li>
+                            <li>③ 제1항 및 제2항에 따른 자료 또는 정보의 수집ㆍ이용 및 요청ㆍ제공은 「개인정보 보호법」에 따른다.</li>
+                            <li>제15조(빈집정보시스템의 구축)</li>
+                            <li>⑥ 시ㆍ도지사는 빈집을 활용하기 위한 목적의 범위에서 빈집의 소유자가 동의한 경우에 한정하여<br> 빈집정보시스템으로 처리한 빈집정보를 인터넷과 그 밖의 방법을 병행하여 공개할 수 있다.</li>
+                        </ul>
+                        <p>이는 빈집에 대한 인식이 쇠퇴한 지역의 표상으로 여겨지기 때문이다. </p>
+                    </div>
+                </div>
+            </section>
+            <section id="story4">
+                <div>
+                    <h3>빈집은 공포의 대상이며, 혐오의 대상이다</h3>
+                    <b>빈집은 더럽고, 위험하고, 무서운 존재로 각인되어 있다</b>
+                </div>
+                <div class="complaints">
+                    <div>
+                        <img src="img/user.png" alt="">
+                        <p>A씨<span>서구  내당2,3동</span></p>
+                        <p>"우리 집 아래 전체가 다 빈집이라 주변에 쥐나 바퀴벌레가 엄청나게 많아요. 밤만 되면 쥐와 바퀴벌레가 집으로 들어와서 골치가 아픕니다. 무엇보다 빈집 담벼락에 이상한 물질이 뿌려져 있는 경우도 있고 범죄자가 숨어있을까 봐 무서워요. 그래서 웬만하면 밤에는 집 밖으로 나가지 않아요."</p>
+                    </div>
+                    <div>
+                        <img src="img/user.png" alt="">
+                        <p>B씨<span>중구 동인동</span></p>
+                        <p>"오늘 빈집에서 도둑이 잡혔어요. 근처 마트에서 도둑질을 하고 빈집에 숨어있었다는데, 무섭습니다.<br>빈집이 모여 있는 곳을 중심으로 사고 발생을 막고 안전문제를 사전에 방지 할수 있게 해주세요"</p>
+                    </div>
+                    <div>
+                        <img src="img/user.png" alt="">
+                        <p>C씨<span>수성구 수성4가동</span></p>
+                        <p>"수년간 방치된 사람이 살지않는 빈집이 있습니다. 빈집담장이 수년간 관리없이 방치되다 보니 주거지역내 흉물로 자리잡고 있습니다. 수년간 방치되어 외벽균열이 상당히 진행되어 안전사고의 위험도 내포하고 있습니다. 담장아래에는 매일 인근주택 어린이들이 공놀이를 하고 있습니다"</p>
+                    </div>
+                </div>
+            </section>
+            <section id="story5">
+                <h3>그러나 대부분의 사람들은 빈집문제에 관심이 없다</h3>
+                <img src="img/민원비율.png" alt="">
+                <p>공개된 대구광역시 새올민원에서 빈집에 대한 민원은 0.1~0.7%이다.<br>
+                    건수로 하면 10건 남짓이다.<br>
+                    빈집에 대한 외면은 관심 부재로 이어지고, 이는 빈집문제의 해결을 가로 막는 벽이다. </p>
+            </section>
+            <section id="story6">
+                <span>새롭게 태어난</span>
+                <h2>re:born home</h2>
+                <b>빈집은 뜯지 않은 선물이다.</b>
+                <p>지역의 쇠퇴를 의미하는 존재가 아니라 지역의 활기를 되찾아줄 존재이다.</p>
+                <div class="video">
+                    <video src="video/video1.mp4" width="70%" autoplay muted></video>
+                    <div>
+                        <h4><span>re:born Home</span>지역에 활기를 주다</h4>
+                        <p>삭막하고 어두웠던 골목길을 밝히고, 그 자리에 이야기와 웃음을 피운다. </p>
+                    </div>
+                </div>
+                <div class="video">
+                    <video src="video/video2.mp4" width="70%" min-width="660px" autoplay muted></video>
+                    <div>
+                        <h4><span>re:born Home</span>청년들과 주민들에게 새로운 것을 배우게 하다</h4>
+                        <p>지역을 바꾸는 동력을 주었으며, 새로운 공공의 이익을 준다.</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <video src="video/video3.mp4" width="70%" autoplay muted></video>
+                    <div>
+                        <h4><span>re:born Home</span>사람과 사람이 이어지는 통로를 만들다</h4>
+                        <p>문화와 추억이 고스란히, 사뿐히  지역에 스며들게  한다.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="story7">
+                <div>
+                    <h2>Re : born Home 종류</h2>
+                    <p>빈집을 새롭게 태어나게 하는 방식은 크게 두가지가 있다.</p>
+                    <b>철거방식과  재활용방식</b>
+                </div>
+                <div class="methodCon">
+                    <img src="img/sort.png" alt="빈집활용방식">
+                    <div class="methods">
+                        <div>
+                            <h3>철거방식</h3>
+                            <p> 3,4등급에 주로하는 방식으로 빈집을 철거한 뒤 그곳을 주차장이나 텃밭, 주민쉼터, 공원 등으로 만들어 지역환경 개선을 위한 공간으로 활용하는 것이다.</p>
+                            <span>나라와 지역을 불문하고 많이 쓰는 방식으로 부산의 '착한 텃밭 조성사업'이나 대구광역시의 빈집활용 방안으로 대부분 사용하고 있다. </span>
+                        </div>
+                        <div>
+                            <h3>재활용방식</h3>
+                            <p>1,2등급에 주로하는 방식으로 양호한 빈집을 리모델링하거나 개보수하여 새롭게 임대하거나 매매하는 방식이다. 카페나 여관, 임대주택 등으로 활용하여 수익성을 얻고 있거나 공공적으로 예술공간,  회의공간 등으로 활용하기도 한다.</p>
+                            <span>서울의 '두꺼비하우징'이나 수원시의 다울마을, 제주도의 다자요 게스트하우스,  순천의 '발랑살롱'등이 그 예 이다.</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
             <section class="gallery" id="gallery">
                 <h2>re:born home gallery</h2>
                 <h3>대구광역시 re:born home</h3>
@@ -499,20 +647,6 @@
                 </div>
                 <a target="_blank" class="moreBtn" href="https://www.notion.so/86c8a7e0a1d449379f2d451c91ffea29?v=6e58cb6b60e84131869052e1f109ba81">해외 Re:born home 사례 더 알아보기</a>
             </section>
-            
-            <!-- 
-                <div class="flow3">
-                    <div>
-                        <p>시민들이 빈집에 대해 알려도 해도 <br>법령상 빈집에 대한 자료공개는 소유주의 허락이 있어야 하기에 <br>지자체에서는 곤란할 수밖에 없다.</p>
-                        <ul class="laws">※ 빈집 법령
-                            <li>제8조(빈집등에 관한 자료 또는 정보의 이용 및 요청)</li>
-                            <li>③ 제1항 및 제2항에 따른 자료 또는 정보의 수집ㆍ이용 및 요청ㆍ제공은 「개인정보 보호법」에 따른다.</li>
-                            <li>제15조(빈집정보시스템의 구축)</li>
-                            <li>⑥ 시ㆍ도지사는 빈집을 활용하기 위한 목적의 범위에서 빈집의 소유자가 동의한 경우에 한정하여<br> 빈집정보시스템으로 처리한 빈집정보를 인터넷과 그 밖의 방법을 병행하여 공개할 수 있다.</li>
-                        </ul>
-                    </div>
-                </div>
-             -->
             <section class="contact_form" id="contact_form">
                 <div>
                     <h2 class="sectionTitle">present re:born home</h2>
@@ -563,7 +697,6 @@
                 </div>
                 
             </section>
-            
         </div>
     </div>
 </body>

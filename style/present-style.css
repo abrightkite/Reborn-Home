@@ -1,10 +1,11 @@
 section#contact_form {
+    height: unset;
     background-color: #000;
     color: #ddd;
     border-top: 1px solid rgba(221,221,221, 0.2);
 }
 #contact_form > div {
-    margin: 150px auto 0;
+    margin: 80px auto;
     padding: 50px;
     width: 80%;
     border: 1px solid #ddd;
