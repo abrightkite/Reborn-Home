@@ -5,11 +5,7 @@ section#contact_form {
     border-top: 1px solid rgba(221,221,221, 0.2);
 }
 #contact_form > div {
-<<<<<<< HEAD
     margin: 80px auto;
-=======
-    margin: 50px auto 0;
->>>>>>> 594207049060f377ac00398c8cc1980e81b2e81c
     padding: 50px;
     width: 80%;
     border: 1px solid #ddd;

@@ -135,7 +135,6 @@ body {
 .currentStat > div p {
     margin-bottom: 20px;
 }
-<<<<<<< HEAD
 
 /* 빈집 요인 */
 section#cause {
@@ -172,53 +171,12 @@ section#cause {
     font-weight: bolder;
     font-size: 16px;
     color: #ccc;
-=======
-#current .figure {
-    width: 400px;
-    height: 600px;
-    margin-right: 70px;
-    color: #000;
-}
-.figure .sectionTitle {
-    font-size: 1em;
-    font-weight: 700;
-}
-.figure #city {
-    color: #000;
-    font-size: 1.6em;
-    line-height: 1.5;
-    letter-spacing: -0.1em;
-    font-weight: lighter;
-}
-.figure .figureCon {
-    margin-top: 50px;
-    display: flex;
-}
-.figure .figureCon .box:first-child {
-    margin: 0 120px 0 10px;
-}
-.figure .row:not(:nth-of-type(1)) {
-    margin: 50px 0 15px 0;
-}
-.figure .row:nth-of-type(1) {
-    margin: 5px 0 0;
-}
-.figure .figureCon .title {
-    color: #111;
->>>>>>> 594207049060f377ac00398c8cc1980e81b2e81c
     line-height: 2;
 }
-<<<<<<< HEAD
 #cause ul li {
     font-size: 14px;
     line-height: 1.5;
     font-weight: normal;
-=======
-.figure .number {
-    color: #000;
-    font-size: 1.3em;
-    font-weight: 400;
->>>>>>> 594207049060f377ac00398c8cc1980e81b2e81c
 }
 
 #cause .factorArea {
