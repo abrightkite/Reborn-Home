@@ -139,12 +139,13 @@
     color: #ddd;
 }
 
-#story4 {
+section#story4 {
     background: #000;
     color: #eee;
+    height: unset;
+    padding: 80px;
 }
 #story4 > div:first-child {
-    margin: 80px;
     text-align: right;
 }
 #story4 h3 {
@@ -157,7 +158,7 @@
 }
 #story4 .complaints > div {
     max-width: 50%;
-    margin: 30px 0 30px 80px;
+    margin: 30px 0 30px;
 }
 #story4 .complaints > div p {
     padding: 7px 0;
