@@ -143,7 +143,7 @@ section#story4 {
     background: #000;
     color: #eee;
     height: unset;
-    padding: 80px;
+    padding: 80px 80px 50px;
 }
 #story4 > div:first-child {
     text-align: right;
@@ -200,7 +200,7 @@ section#story6 {
 #story6 h2 {
     font-size: 48px;
     text-transform: capitalize;
-    padding: 10px 0 20px;
+    padding: 0 0 20px;
 }
 #story6 b {
     font-weight: normal;
