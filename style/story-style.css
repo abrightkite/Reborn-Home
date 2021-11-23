@@ -172,13 +172,13 @@ section#story4 {
 #story4 .complaints > div:nth-child(2) {
     text-align: right;
 }
+/* 스토리5 */
 section#story5 {
     height: unset;
 }
 #story5 {
     text-align: center;
     padding: 50px 80px;
-    
 }
 #story5 h3 {
     font-size: 24px;

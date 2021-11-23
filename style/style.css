@@ -151,8 +151,8 @@ section#cause {
     font-size: 24px;
 }
 #cause > div:first-child {
-        text-align: left;
-        padding-bottom: 30px;
+    text-align: left;
+    padding-bottom: 30px;
 }
 #cause b {
     color: #ddd;
