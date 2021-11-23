@@ -7,7 +7,7 @@ function isElementUnderBottom(elem, triggerDiff) {
   function handleScroll() {
     const elems = document.querySelectorAll('.up-on-scroll');
     elems.forEach(elem => {
-      if (isElementUnderBottom(elem, 0)) {
+      if (isElementUnderBottom(elem, -20)) {
         elem.style.opacity = "0";
         elem.style.transform = 'translateY(70px)';
       } else {
