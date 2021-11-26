@@ -8,17 +8,22 @@ path:hover {
 /* .area {fill: aqua;} */
 .area.active {
     fill: #666;
-    stroke: #666;
-    stroke-width: 6px;
+    stroke: #fff;
+    stroke-width: 4px;
 }
 #current {
     background: linear-gradient(#666 0%, #000 100%) no-repeat;
-    background-color: #efefef;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-#current .figure {
+#application {
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.figure {
     width: 400px;
     height: 600px;
     margin-right: 70px;

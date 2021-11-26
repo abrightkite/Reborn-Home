@@ -975,41 +975,76 @@ window.onload = function() {
         "가구 수": 5019
       }
   ];
-  // console.log(presentData);
+
+
+  console.log(presentData);
+
+
   const presentKeys = Object.keys(presentData);
   const presentValues = Object.values(presentData);
+
+
+  function selectedLocation(target){
+
+    for(var i = 0 ; i < presentData.length; i++ ){
+      if(presentData[i]["행정동"] == target){
+
+        return presentData[i];
+
+      }
+    }
+    
+  }
 
 
   var area = document.querySelectorAll('#daegu .area');
   // 지도 클릭 이벤트
   for (var i = 0; i < area.length; i++) {
-      area[i].addEventListener('click', function(e){
-          e.preventDefault();
-          // 클릭한 element에만 active class 추가
-          for (var y = 0; y < area.length; y++) {
-              area[y].classList.remove('active');
-              e.target.classList.add('active');
-          }
 
-        })
-  }
+    for (var k = 0; k < area.length; k++) {
+      var color = 185 * (1 - (k / 185));
+      area[k].style.fill = "rgb(" + color + "," + color + "," + color + ")";
+    }
+
+  area[i].addEventListener('click', function(e){
+    e.preventDefault();
+
+    // console.log($(e.target).data('id'));
+    var id = $(e.target).data('id')
+    var selectedInfo = selectedLocation(id);
 
 
-  // nav 버튼 클릭 이벤트
-  var btn = document.querySelectorAll('.btn');
-  console.log(btn);
+    if(selectedInfo!= undefined){
 
-  for (var i = 0; i < btn.length; i++) {
-    btn[i].addEventListener('click', function(e){
-        e.preventDefault();
-        
-        for (var y = 0; y < btn.length; y++) {
-            btn[y].classList.remove('on');
-            e.target.classList.add('on');
-        }     
-    })
-  }
+      document.getElementById('gu').innerHTML = selectedInfo["구군"];
+      document.getElementById('dong').innerHTML = selectedInfo["행정동"];
+      document.getElementById('numberOfHome').innerHTML = selectedInfo["가구 수"];
+      document.getElementById('ratio').innerHTML = selectedInfo["빈집비율"];
+      document.getElementById('level').innerHTML = selectedInfo["3,4등급 대비 12등급 비율"];
+    }
 
+    
+    for (var y = 0; y < area.length; y++) {
+      area[y].classList.remove('active');
+      e.target.classList.add('active');
+    }
+  })
 }
 
-  
+
+// nav 버튼 클릭 이벤트
+var btn = document.querySelectorAll('.btn');
+console.log(btn);
+
+for (var i = 0; i < btn.length; i++) {
+  btn[i].addEventListener('click', function(e){
+      e.preventDefault();
+      
+      for (var y = 0; y < btn.length; y++) {
+          btn[y].classList.remove('on');
+          e.target.classList.add('on');
+      }     
+  })
+}
+
+        

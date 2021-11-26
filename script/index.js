@@ -69,6 +69,11 @@ $(document).ready(function(){
     var offset = $('#gallery').offset(); 
     $('html, body').animate({scrollTop : offset.top}, 400);
   });
+  $('#applicationBtn').click(function(e){
+    e.preventDefault();
+    var offset = $('#application').offset();
+    $('html, body').animate({scrollTop : offset.top}, 400);
+  });
   $('#presentBtn').click(function(e){
     e.preventDefault();
     var offset = $('#contact_form').offset();
